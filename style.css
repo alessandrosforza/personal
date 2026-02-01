@@ -2813,10 +2813,3 @@ select.mobile-device {
     color: rgba(255, 255, 255, 0.6);
 }
 
-#mainNav .navbar-brand {
-  display: block !important;
-  opacity: 1 !important;
-  color: white !important;
-  font-size: 1.4rem;
-  font-weight: 600;
-}
