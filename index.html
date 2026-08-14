@@ -58,29 +58,69 @@
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#university">Università</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#olifis">Olimpiadi della Fisica</a>
-            </li>
-			<li class="nav-item">
-			  <a class="nav-link js-scroll-trigger" href="#svago">Svago</a>
-			</li>
-			<li class="nav-item">
- 			  <a class="nav-link js-scroll-trigger" href="#contact">Contatti</a>
-			</li>
-          </ul>
+        
+<div class="collapse navbar-collapse" id="navbarResponsive">
+
+    <!-- SEZIONI -->
+    <ul class="navbar-nav text-uppercase ml-auto main-menu">
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger active"
+               href="#home"
+               data-i18n="home">Home</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"
+               href="#about"
+               data-i18n="about">About</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"
+               href="#university"
+               data-i18n="university">Università</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"
+               href="#olifis"
+               data-i18n="olifis">Olimpiadi della Fisica</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"
+               href="#svago"
+               data-i18n="leisure">Svago</a>
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link js-scroll-trigger"
+               href="#contact"
+               data-i18n="contact">Contatti</a>
+        </li>
+
+    </ul>
+
+
+    <!-- LINGUA + MODALITÀ GIORNO/NOTTE -->
+    <div class="site-controls">
+
+        <div class="language-selector">
+            <button class="language-btn active" data-lang="it">IT</button>
+            <button class="language-btn" data-lang="en">EN</button>
+            <button class="language-btn" data-lang="es">ES</button>
         </div>
-      </div>
+
+        <button id="theme-toggle" class="theme-btn" aria-label="Cambia tema">
+            <i class="fa fa-moon-o"></i>
+        </button>
+
+    </div>
+
+</div>
+	  
+	  </div>
     </nav>
 	
 	<div id="home" class="ct-header ct-header--slider ct-slick-custom-dots">
