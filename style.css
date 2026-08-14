@@ -2813,3 +2813,179 @@ select.mobile-device {
     color: rgba(255, 255, 255, 0.6);
 }
 
+
+
+/* ==================================================
+   NAVBAR - LANGUAGE + THEME CONTROLS
+   ================================================== */
+
+#mainNav .container {
+    max-width: 1400px;
+}
+
+/* spazio tra menu e controlli */
+.site-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-left: 25px;
+}
+
+
+/* ---------- LINGUE ---------- */
+
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.language-btn {
+    background: transparent;
+    border: none;
+    padding: 5px 7px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: #555;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.language-btn:hover {
+    color: #000;
+}
+
+.language-btn.active {
+    color: #000;
+    font-weight: 800;
+    border-bottom: 2px solid #000;
+}
+
+
+/* ---------- DARK MODE BUTTON ---------- */
+
+.theme-btn {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    border: 1px solid #ddd;
+
+    background: transparent;
+    color: #333;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.theme-btn:hover {
+    background: #f0f0f0;
+}
+
+
+/* ==================================================
+   DARK MODE
+   ================================================== */
+
+body {
+    transition: background-color 0.3s ease,
+                color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #111;
+    color: #eee;
+}
+
+
+/* navbar */
+
+body.dark-mode #mainNav {
+    background-color: #111 !important;
+}
+
+body.dark-mode #mainNav .nav-link {
+    color: #eee !important;
+}
+
+body.dark-mode #mainNav .container > div:first-child {
+    color: #eee !important;
+}
+
+
+/* sezioni bianche */
+
+body.dark-mode .section.wb {
+    background-color: #171717 !important;
+    color: #eee;
+}
+
+
+/* sezioni grigie */
+
+body.dark-mode .section.lb {
+    background-color: #202020 !important;
+    color: #eee;
+}
+
+
+/* titoli */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode p {
+    color: #eee;
+}
+
+
+/* language buttons */
+
+body.dark-mode .language-btn {
+    color: #aaa;
+}
+
+body.dark-mode .language-btn:hover,
+body.dark-mode .language-btn.active {
+    color: #fff;
+}
+
+body.dark-mode .language-btn.active {
+    border-bottom-color: #fff;
+}
+
+
+/* pulsante tema */
+
+body.dark-mode .theme-btn {
+    color: #fff;
+    border-color: #555;
+}
+
+body.dark-mode .theme-btn:hover {
+    background: #333;
+}
+
+
+/* ==================================================
+   MOBILE
+   ================================================== */
+
+@media (max-width: 991px) {
+
+    .site-controls {
+        margin-left: 0;
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+}
