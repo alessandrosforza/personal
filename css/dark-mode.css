@@ -1,0 +1,237 @@
+/* ============================================================
+   LIGHT / DARK MODE
+   ============================================================ */
+
+
+/* Transizioni morbide */
+
+body,
+#mainNav,
+.section,
+.message-box,
+.section-title,
+.contact_form,
+.form-control,
+.copyrights,
+.site-name,
+.language-btn,
+.theme-btn {
+    transition:
+        background-color 0.35s ease,
+        color 0.35s ease,
+        border-color 0.35s ease;
+}
+
+
+/* ============================================================
+   LIGHT MODE
+   ============================================================ */
+
+.site-name {
+    color: #333333;
+}
+
+
+/* ============================================================
+   DARK MODE - BODY
+   ============================================================ */
+
+body.dark-mode {
+    background-color: #121212 !important;
+    color: #e6e6e6 !important;
+}
+
+
+/* ============================================================
+   NAVBAR
+   ============================================================ */
+
+body.dark-mode #mainNav {
+    background-color: #181818 !important;
+}
+
+body.dark-mode .site-name {
+    color: #ffffff !important;
+}
+
+body.dark-mode #mainNav .nav-link {
+    color: #dddddd !important;
+}
+
+body.dark-mode #mainNav .nav-link:hover,
+body.dark-mode #mainNav .nav-link.active {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   SEZIONI BIANCHE
+   ============================================================ */
+
+body.dark-mode .section.wb {
+    background-color: #121212 !important;
+    color: #dddddd !important;
+}
+
+
+/* ============================================================
+   SEZIONI GRIGIE
+   ============================================================ */
+
+body.dark-mode .section.lb {
+    background-color: #1a1a1a !important;
+    color: #dddddd !important;
+}
+
+
+/* ============================================================
+   SEZIONI SCURE
+   ============================================================ */
+
+body.dark-mode .section.db {
+    background-color: #101010 !important;
+    color: #dddddd !important;
+}
+
+
+/* ============================================================
+   TITOLI
+   ============================================================ */
+
+body.dark-mode .section-title h3,
+body.dark-mode .message-box h1,
+body.dark-mode .message-box h2,
+body.dark-mode .message-box h3,
+body.dark-mode .message-box h4 {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   TESTI
+   ============================================================ */
+
+body.dark-mode .section-title p,
+body.dark-mode .message-box p,
+body.dark-mode p {
+    color: #cccccc;
+}
+
+body.dark-mode li {
+    color: #dddddd;
+}
+
+
+/* ============================================================
+   LANGUAGE SELECTOR
+   ============================================================ */
+
+body.dark-mode .language-btn {
+    color: #cccccc !important;
+}
+
+body.dark-mode .language-btn:hover,
+body.dark-mode .language-btn.active {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   PULSANTE GIORNO / NOTTE
+   ============================================================ */
+
+.theme-btn {
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+body.dark-mode .theme-btn {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   MENU MOBILE
+   ============================================================ */
+
+body.dark-mode .navbar-toggler,
+body.dark-mode .navbar-toggler i {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   FORM CONTATTI
+   ============================================================ */
+
+body.dark-mode .contact_form {
+    background-color: #181818 !important;
+}
+
+body.dark-mode .form-control {
+    background-color: #242424 !important;
+    color: #ffffff !important;
+    border-color: #444444 !important;
+}
+
+body.dark-mode .form-control:focus {
+    background-color: #292929 !important;
+    color: #ffffff !important;
+    border-color: #777777 !important;
+    box-shadow: none !important;
+}
+
+body.dark-mode .form-control::placeholder {
+    color: #999999 !important;
+}
+
+
+/* ============================================================
+   SOCIAL
+   ============================================================ */
+
+body.dark-mode .message-box ul li a {
+    color: #dddddd !important;
+}
+
+body.dark-mode .message-box ul li a:hover {
+    color: #ffffff !important;
+}
+
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+
+body.dark-mode .copyrights {
+    background-color: #090909 !important;
+}
+
+body.dark-mode .footer-company-name {
+    color: #aaaaaa !important;
+}
+
+body.dark-mode .footer-company-name a {
+    color: #dddddd !important;
+}
+
+
+/* ============================================================
+   HOME
+   ============================================================ */
+
+.slider-inner h1,
+.slider-inner p {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+
+/* ============================================================
+   SELEZIONE TESTO
+   ============================================================ */
+
+body.dark-mode ::selection {
+    background-color: #555555;
+    color: #ffffff;
+}
